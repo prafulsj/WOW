@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.0.0-rc.3)
+  - LayoutKit (10.1.0)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0.0-rc.3)
+  - LayoutKit
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - LayoutKit
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  LayoutKit: 66478bb3af5ce4519a056d9465bc4c7585d2350b
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: bc5781ea80256ac5f36c6bbe4b431fd6ccf43cae
+
+COCOAPODS: 1.8.4

@@ -50,7 +50,7 @@
         <!--Item-->
         <scene sceneID="4Xq-tY-hT8">
             <objects>
-                <tableViewController id="7sj-Wv-V7q" sceneMemberID="viewController">
+                <tableViewController id="7sj-Wv-V7q" customClass="HomeTableViewController" customModule="WOW" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ENL-4B-J8G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -125,8 +125,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="7sj-Wv-V7q" kind="relationship" relationship="viewControllers" id="3B2-WD-byG"/>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="t0q-tp-VNt"/>
+                        <segue destination="7sj-Wv-V7q" kind="relationship" relationship="viewControllers" id="Ptx-C4-wc9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>

@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		64807894B2E370ADAC1E5D44 /* Pods_WOW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC35505371099221315A70F7 /* Pods_WOW.framework */; };
+		951163DB23C701CF009AB43B /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951163DA23C701CF009AB43B /* HomeTableViewController.swift */; };
+		951163DE23C70254009AB43B /* TopStoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951163DD23C70254009AB43B /* TopStoriesTableViewCell.swift */; };
 		952C749F23C4D597004060C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952C749E23C4D597004060C2 /* AppDelegate.swift */; };
 		952C74A123C4D597004060C2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952C74A023C4D597004060C2 /* FirstViewController.swift */; };
 		952C74A323C4D597004060C2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952C74A223C4D597004060C2 /* SecondViewController.swift */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		60F1267780369018F29B2CB3 /* Pods-WOW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOW.release.xcconfig"; path = "Target Support Files/Pods-WOW/Pods-WOW.release.xcconfig"; sourceTree = "<group>"; };
 		61DE662A5E16E55E38195C2A /* Pods-WOW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOW.debug.xcconfig"; path = "Target Support Files/Pods-WOW/Pods-WOW.debug.xcconfig"; sourceTree = "<group>"; };
+		951163DA23C701CF009AB43B /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		951163DD23C70254009AB43B /* TopStoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesTableViewCell.swift; sourceTree = "<group>"; };
 		952C749B23C4D597004060C2 /* WOW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WOW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		952C749E23C4D597004060C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		952C74A023C4D597004060C2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -48,8 +52,16 @@
 				61DE662A5E16E55E38195C2A /* Pods-WOW.debug.xcconfig */,
 				60F1267780369018F29B2CB3 /* Pods-WOW.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		951163DC23C701F8009AB43B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				951163DA23C701CF009AB43B /* HomeTableViewController.swift */,
+				951163DD23C70254009AB43B /* TopStoriesTableViewCell.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		952C749223C4D597004060C2 = {
@@ -73,6 +85,7 @@
 		952C749D23C4D597004060C2 /* WOW */ = {
 			isa = PBXGroup;
 			children = (
+				951163DC23C701F8009AB43B /* Home */,
 				952C749E23C4D597004060C2 /* AppDelegate.swift */,
 				952C74A023C4D597004060C2 /* FirstViewController.swift */,
 				952C74A223C4D597004060C2 /* SecondViewController.swift */,
@@ -207,6 +220,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				951163DE23C70254009AB43B /* TopStoriesTableViewCell.swift in Sources */,
+				951163DB23C701CF009AB43B /* HomeTableViewController.swift in Sources */,
 				952C74A323C4D597004060C2 /* SecondViewController.swift in Sources */,
 				952C749F23C4D597004060C2 /* AppDelegate.swift in Sources */,
 				952C74A123C4D597004060C2 /* FirstViewController.swift in Sources */,

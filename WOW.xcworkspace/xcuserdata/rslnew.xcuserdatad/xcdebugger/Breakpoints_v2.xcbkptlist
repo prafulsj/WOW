@@ -10,7 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WOW/Home/HomeTableViewController.swift"
+<<<<<<< HEAD
             timestampString = "600278911.722526"
+=======
+            timestampString = "600267590.939877"
+>>>>>>> 261f22f6e5dab109d123d7c1f8ed136ecef35d15
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
@@ -26,7 +30,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WOW/Home/HomeTableViewController.swift"
+<<<<<<< HEAD
             timestampString = "600278911.722585"
+=======
+            timestampString = "600267590.939962"
+>>>>>>> 261f22f6e5dab109d123d7c1f8ed136ecef35d15
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -42,7 +50,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WOW/Home/HomeTableViewController.swift"
+<<<<<<< HEAD
             timestampString = "600278911.722626"
+=======
+            timestampString = "600267590.940016"
+>>>>>>> 261f22f6e5dab109d123d7c1f8ed136ecef35d15
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
@@ -58,7 +70,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WOW/Home/HomeTableViewController.swift"
+<<<<<<< HEAD
             timestampString = "600278911.722664"
+=======
+            timestampString = "600267590.9400589"
+>>>>>>> 261f22f6e5dab109d123d7c1f8ed136ecef35d15
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
@@ -74,11 +90,19 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WOW/Home/TopStoriesTableViewCell.swift"
+<<<<<<< HEAD
             timestampString = "600278911.7227041"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
             endingLineNumber = "45"
+=======
+            timestampString = "600267590.940102"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+>>>>>>> 261f22f6e5dab109d123d7c1f8ed136ecef35d15
             landmarkName = "awakeFromNib()"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,11 +114,19 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WOW/Home/TopStoriesTableViewCell.swift"
+<<<<<<< HEAD
             timestampString = "600278911.723052"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "72"
             endingLineNumber = "72"
+=======
+            timestampString = "600267590.940757"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+>>>>>>> 261f22f6e5dab109d123d7c1f8ed136ecef35d15
             landmarkName = "loadView()"
             landmarkType = "7">
          </BreakpointContent>

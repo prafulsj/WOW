@@ -1,24 +1,28 @@
 PODS:
   - Alamofire (5.0.0-rc.3)
+  - MSPeekCollectionViewDelegateImplementation (3.0.3)
   - SnapKit (5.0.1)
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-rc.3)
+  - MSPeekCollectionViewDelegateImplementation (~> 3.0.0)
   - SnapKit (~> 5.0.0)
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - MSPeekCollectionViewDelegateImplementation
     - SnapKit
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  MSPeekCollectionViewDelegateImplementation: 3e6beb9a722daf6c920ba5db21083cbe7d0e7359
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 7b22d20b7e8925500ebab8e5a495484c02f8ed00
+PODFILE CHECKSUM: a3ae00f81fdf5b75f38b83c2659108d18ee11ac4
 
 COCOAPODS: 1.8.4

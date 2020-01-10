@@ -7,16 +7,41 @@
 //
 
 import UIKit
+import SnapKit
+import MSPeekCollectionViewDelegateImplementation
 
 class HomeTableViewController: UITableViewController {
 
     let TopStoriesCellID = "TopStoriesCellID"
+    let TopStoriesTitleCellID = "TopStoriesTitleCellID"
+    let LiveCollectionViewCell = "LiveCollectionViewCell"
+    let LiveTableCollectionViewCell = "LiveTableCollectionViewCell"
+    let collectionView: UICollectionView = {
+        let flowLayout = UICollectionViewFlowLayout()
+        let collectionView = UICollectionView(frame: CGRect(x: 10, y: 10, width: 100, height: 80), collectionViewLayout: flowLayout)
+        collectionView.backgroundColor = UIColor.green
+        return collectionView
+    }()
+
+    var behavior = MSCollectionViewPeekingBehavior()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.register(TopStoriesTableViewCell.self, forCellReuseIdentifier: TopStoriesCellID)
+        tableView.register(TopStoriesTitleTableViewCell.self, forCellReuseIdentifier: TopStoriesTitleCellID)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: LiveTableCollectionViewCell)
         tableView.backgroundColor = UIColor.red
+
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: LiveCollectionViewCell)
+        collectionView.configureForPeekingBehavior(behavior: behavior)
+        collectionView.dataSource = self
+        collectionView.delegate = self
+
+//        collectionView.snp.makeConstraints { make in
+//            make.top.bottom.equalToSuperview().inset(10)
+//            make.leading.trailing.equalToSuperview().inset(20)
+//        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -34,19 +59,35 @@ class HomeTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return 3
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: TopStoriesCellID, for: indexPath) as! TopStoriesTableViewCell
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "LiveTableCollectionViewCell", for: indexPath) as UITableViewCell
+            cell.addSubview(collectionView)
 
-        cell.loadView()
+            return cell
+        } else if indexPath.row == 1 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: TopStoriesTitleCellID, for: indexPath) as! TopStoriesTitleTableViewCell
 
-        return cell
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: TopStoriesCellID, for: indexPath) as! TopStoriesTableViewCell
+
+            cell.loadView()
+            return cell
+        }
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 125
+        if indexPath.row == 0 {
+            return 100
+        } else if indexPath.row == 1 {
+            return 45
+        } else {
+            return 125
+        }
     }
 
 
@@ -95,4 +136,24 @@ class HomeTableViewController: UITableViewController {
     }
     */
 
+}
+
+extension HomeTableViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 4
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LiveCollectionViewCell, for: indexPath)
+        cell.contentView.backgroundColor = UIColor.red
+        return cell
+    }
+
+    override func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        behavior.scrollViewWillEndDragging(scrollView, withVelocity: velocity, targetContentOffset: targetContentOffset)
+    }
 }

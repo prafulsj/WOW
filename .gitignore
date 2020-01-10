@@ -1,0 +1,35 @@
+# CocoaPods (automatically generated - not committed)
+Podfile.lock
+/Podfile
+Pods
+Resources/*.podspec
+
+# OS X
+.DS_Store
+
+# Build Directory
+build/*
+ligradle/
+DerivedData
+output/*
+.idea/*
+# User Data
+.idea/*
+*.pbxuser
+xcuserdata
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+# Workspace (automatically generated - not committed)
+*.xcworkspacedata
+xcuserdata
+!default.xcworkspace
+!MessengerHarness.xcworkspace
+*.xccheckout
+*.moved-aside
+xcodebuild.log

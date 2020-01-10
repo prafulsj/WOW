@@ -16,7 +16,9 @@ class TopStoriesTableViewCell: UITableViewCell {
         imageView.layer.cornerRadius = 10
         imageView.backgroundColor = UIColor.orange
 //        imageView.contentMode = .scaleAspectFill
-//        imageView.image = UIImage(named: "Dhoni")
+        imageView.image = UIImage(named: "Dhoni")
+        imageView.layer.cornerRadius = 5
+        imageView.layer.borderWidth = 5
         imageView.layer.borderColor = UIColor.white.cgColor
         return imageView
     }()
@@ -45,7 +47,7 @@ class TopStoriesTableViewCell: UITableViewCell {
 
     let containerView: UIView = {
         let view = UIView(frame: CGRect.zero)
-        view.backgroundColor = UIColor.gray
+//        view.backgroundColor = UIColor.gray
         return view
     }()
     
@@ -61,6 +63,8 @@ class TopStoriesTableViewCell: UITableViewCell {
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+
+        backgroundColor = UIColor.gray
 
         addSubview(containerView)
         containerView.addSubview(storyImageView)

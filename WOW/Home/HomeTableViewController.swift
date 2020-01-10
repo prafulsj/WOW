@@ -16,6 +16,7 @@ class HomeTableViewController: UITableViewController {
         super.viewDidLoad()
 
         tableView.register(TopStoriesTableViewCell.self, forCellReuseIdentifier: TopStoriesCellID)
+        tableView.backgroundColor = UIColor.red
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -45,7 +46,7 @@ class HomeTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return 125
     }
 
 
